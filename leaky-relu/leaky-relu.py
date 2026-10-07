@@ -11,4 +11,3 @@ def leaky_relu(x: list | float, alpha: float) -> np.ndarray:
         return np.array(alpha*x) if x < 0 else np.array(x)
     else:
         return np.array([leaky_relu(z, alpha) for z in x])
-    pass
